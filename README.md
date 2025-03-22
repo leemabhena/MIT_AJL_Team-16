@@ -6,7 +6,7 @@
 | ----- | ----- | ----- |
 | Lee Mabhena | @leemabhena | Built more accurate model for submission |
 | Shahadah Manzer | @shahadah-manzer | Project Manager, tested with EffctiveB0 and B2 models |
-| Ha Lihn Nguyen | @ | tested with CNN model |
+| Ha Lihn Nguyen | @halinhnguyen28 | tested with CNN model |
 
 ---
 
