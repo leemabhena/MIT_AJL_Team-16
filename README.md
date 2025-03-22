@@ -1,31 +1,4 @@
 # bttai-MIT_AJL_Team-16
-🤖 Model Development:
-
-After testing a variety of models based on image classification and recognition. Some models included:
-  - Efficient B2
-  - Efficient B0
-  - ResNet50
-  - CNN
-  - and more...
-We found that
-
-
-📊 Results & Key Findings:
-Our model achieved [X]% accuracy with great performance across all skin tones! 🎯
-
-
-Impact Narrative
-
-AJL: Describes specific steps taken to address model fairness. Explores the broader potential impact of their work. Incorporates creative storytelling technique(s) to make their work accessible.
-WiDS: Discusses findings on brain activity patterns associated with ADHD. Explains how their work could contribute to ADHD research and/or clinical care.
-Next Steps & Future Improvements
-
-Identifies model limitations, potential improvements, and future directions with strong reasoning. 
-
-
-
-
-
 
 ### **👥 Team Members**
 
@@ -121,11 +94,6 @@ We found that using an Xception model
 
 **Answer the relevant questions below based on your competition:**
 
-**WiDS challenge:**
-
-1. What brain activity patterns are associated with ADHD; are they different between males and females, and, if so, how?
-2. How could your work help contribute to ADHD research and/or clinical care?
-
 **AJL challenge:**
 
 As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and storytelling, you can reach others who might not know enough to understand what’s happening with the machine learning model or data visualizations, but might still be heavily impacted by this kind of work.”
@@ -150,6 +118,3 @@ Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi
 ## **📄 References & Additional Resources**
 
 * Cite any relevant papers, articles, or tools used in your project
-
----
-
