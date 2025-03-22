@@ -6,7 +6,7 @@
 | ----- | ----- | ----- |
 | Lee Mabhena | @leemabhena | Built more accurate model for submission |
 | Shahadah Manzer | @shahadah-manzer | Project Manager, tested with EffctiveB0 and B2 models |
-| Ha Lihn Nguyen | @halinhnguyen28 | tested with CNN model |
+| Ha Lihn Nguyen | @halinhnguyen28 | Tested with CNN model |
 
 ---
 
@@ -22,7 +22,7 @@
 
 ---
 
-## **⚙️ Setup & Execution: **
+## **⚙️ Setup & Execution:**
   * Clone repositiory by: git clone https://github.com/<your-repository-link>.git
   * Dowload dataset from Kaggle Competition, place in Google Drive directory
   * Dowload Colab File
@@ -30,7 +30,7 @@
 
 ---
 
-## **🌍 Project Overview: **
+## **🌍 Project Overview:**
 
   Break through tech AI Spring 2025 AI studio. Equitable AI for Dermatology.  
   Build an ML model to classify skin conditions across diverse skin tones.
@@ -52,41 +52,43 @@ Data contains main features of, provided by Kaggle Competition Description:
   * ddi_scale	(int64)	-- A column used to reconcile this dataset with another dataset
     
   🧐 Process and Challenges: 
-    - Preprocessing included removing possible null values, differentiating/limiting image sizes, and limiting a batch, epoch, and seed       size for later data training. 
+    - Preprocessing included removing possible null values, differentiating/limiting image sizes, and limiting a batch, epoch, and seed size for later data training. 
     - Challenges included understanding the medical labela nd their role in dataset, highlighting md5hash label for output file.  
 
 ---
 
 ## **🧠 Model Development**
 
-**Describe (as applicable):**
-
-🤖 After testing a variety of models based on image classification and recognition. Some models included:
+After testing a variety of models based on image classification and recognition. Some models included:
   - Efficient B2
   - Efficient B0
   - ResNet50
   - CNN
   - and more...
 
-We found that using an Xception model 
-* Model(s) used 
-* Feature selection and Hyperparameter tuning strategies
-* Training setup (e.g., % of data for training/validation, evaluation metric, baseline performance)
+🤖 Model Used
+We used Xception, a powerful CNN pre-trained on ImageNet, for transfer learning. We fine-tuned the final layers for specific skin condition classification task.
+
+🎯 Feature Selection & Hyperparameter Tuning
+
+Used global average pooling to condense feature maps into meaningful representations.
+Applied rescaling to normalize pixel values from (0,255) to (-1,1) for compatibility with Xception.
+Experimented with dropout layers to prevent overfitting (final model excluded it for better generalization).
+Adjusted the learning rate and batch size to optimize performance.
+
+🏋️ Training Setup
+Data Split: Used 80% of images for training and 20% for validation.
+Evaluation Metric: Measured performance using accuracy, precision, recall, and F1-score.
+Baseline Performance: Compared against a simpler CNN model, with Xception significantly improving classification accuracy.
 
 ---
 
 ## **📈 Results & Key Findings**
 
-**Describe (as applicable):**
-
-* Performance metrics (e.g., Kaggle Leaderboard score, F1-score)
-* How your model performed overall
-* How your model performed across different skin tones (AJL)
-* Insights from evaluating model fairness (AJL)
-
-**Potential visualizations to include:**
-
-* Confusion matrix, precision-recall curve, feature importance plot, prediction distribution, outputs from fairness or explainability tools
+* Performance metrics: Score Accuracy of 0.481 leading to #23 on the Kaggle Competion
+* Overall Performance: While the model effectively classified some common skin conditions, performance varied across different categories.
+                       Challenges in distinguishing similar conditions.
+* Model seemd to perform better on lighter tone compared to darker skin tone, thus emphasizing the inhernet bias in technology. 
 
 ---
 
@@ -100,21 +102,19 @@ As Dr. Randi mentioned in her challenge overview, “Through poetry, art, and st
 As you answer the questions below, consider using not only text, but also illustrations, annotated visualizations, poetry, or other creative techniques to make your work accessible to a wider audience.
 Check out [this guide](https://drive.google.com/file/d/1kYKaVNR\_l7Abx2kebs3AdDi6TlPviC3q/view) from the Algorithmic Justice League for inspiration!
 
-1. What steps did you take to address [model fairness](https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)? (e.g., leveraging data augmentation techniques to account for training dataset imbalances; using a validation set to assess model performance across different skin tones)
+1. What steps did you take to address Xception Fairness (https://haas.berkeley.edu/wp-content/uploads/What-is-fairness_-EGAL2.pdf)?
+
+ ✅ Things done or taken into account to model fairness included: 
+     * Using a Validation Set, that included a range of skin tones.
+     * Reweighting Loss Function, adjusting penalities for misclassification
+
 2. What broader impact could your work have?
+
+By ensuring AI works well across all skin tones, we take a step toward reducing racial disparities in medical diagnoses, which can have larger impacts in telemedicne, medical technology/devices, and braodly medical AI fields.
 
 ---
 
 ## **🚀 Next Steps & Future Improvements**
 
-**Address the following:**
-
-* What are some of the limitations of your model?
-* What would you do differently with more time/resources?
-* What additional datasets or techniques would you explore?
-
----
-
-## **📄 References & Additional Resources**
-
-* Cite any relevant papers, articles, or tools used in your project
+* Improve the dataset with even more diverse images 📸
+* Explore new models for better performance that can be used on larger CPU
