@@ -163,4 +163,10 @@ In line with the Algorithmic Justice League’s mission to combine **art, resear
 
 By continuing to refine these approaches, we hope to make dermatology-focused AI models ever more transparent, equitable, and clinically robust.
 
+## **📄 References & Additional Resources**
+
+* Cite any relevant papers, articles, or tools used in your project
+* `https://github.com/ashishpatel26/Skin-Lesions-Detection-Deep-learning`
+
+
 Thank you for exploring our project!
